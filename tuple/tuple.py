@@ -10,6 +10,3 @@ print(tuple[2])
 
 print(len(tuple))
 print(len(liste))
-
-for i in range(10):
-    print(i)
