@@ -55,7 +55,7 @@
 
 # girilenEmail = input("email: ")
 # girilenPassword = input("parola: ")
-# isEmail = (email == girilenEmail.lower())
+# isEmail = (email == girilenEmail.lower().strip())
 # isPassword = (password == girilenPassword.lower())
 # print(f"email bilgisi doğrumu: {isEmail} ve parola doğru mu : {isPassword}")
 
