@@ -88,13 +88,10 @@ tarih = input("aracınız hangi tarihte trafiğe çıktı (2019/8/9): ")
 
 tarih = tarih.split("/")
 
-# print(tarih[0])
-# print(tarih[1])
-# print(tarih[2])
-
-trafigeCikis = datetime.date
+trafigeCikis = datetime.datetime(int(tarih[0]),int(tarih[1]),int(tarih[2]))
 simdi = datetime.datetime.now()
-print(simdi- tarih)
+fark = simdi - trafigeCikis
+days = fark.days
 
 if days <= 365:
     print("1.servis aralığı")
