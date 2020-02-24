@@ -46,25 +46,21 @@ print(f"uygulamaya giriş başarılı mı: {result}")
 
 """
 # 3. cevap
-email = "email@sadikturan.com"
-password = "abc123"
+# email = "email@sadikturan.com"
+# password = "abc123"
 
-mailGiris = input("Email adresinizi girin: ")
-passGiris = input("Parolanızı giriniz: ")
-
-
-
-if email == mailGiris:
-    if password == passGiris:
-        print("Giriş yapıldı")
-    else:
-        print("Girilen parola bilgisi hatalıdır")
-else:
-    print("Girilen email ve parola bilgileri hatalıdır.")
+# mailGiris = input("Email adresinizi girin: ")
+# passGiris = input("Parolanızı giriniz: ")
 
 
 
-
+# if email == mailGiris:
+#     if password == passGiris:
+#         print("Giriş yapıldı")
+#     else:
+#         print("Girilen parola bilgisi hatalıdır")
+# else:
+#     print("Girilen email bilgisi hatalıdır.")
 #######################################################################
 """
 4- Girilen 3 sayıyı büyüklük olarak karşılaştırınız.
@@ -83,11 +79,22 @@ result = (c > a) and (c > b)
 print(f"c en büyük sayıdır : {result}")
 
 """
+# # 4. cevap
+# a = int(input("a: "))
+# b = int(input("b: "))
+# c = int(input("c: "))
 
+# if a > b and a > c:
+#     print(f"{a} sayısı büyüktür {b} ve {c} sayılarından")
+# if b > a and b > c:
+#     print(f"{b} sayısı büyüktür {a} ve {c} sayılarından")
+# if c > a and c > b:
+#     print(f"{c} sayısı büyüktür {a} ve {b} sayılarından")
+#######################################################################
 """
-5- Kullanıcıdan 2 vşze (%60) ve final (%40) notunu alıp ortalama hesaplayınız.
-   Eğer ortalama 50 ve üstündeyse geçti değişse kaldı yazdırın.
-   a-) Ortalama 50 olsa bile filan notu en az 50 olmalıdır.
+5- Kullanıcıdan 2 vize (%60) ve final (%40) notunu alıp ortalama hesaplayınız.
+   Eğer ortalama 50 ve üstündeyse geçti değilse kaldı yazdırın.
+   a-) Ortalama 50 olsa bile final notu en az 50 olmalıdır.
    b-) Finalden 70 alındığında ortalamanın önemi olmasın.
 
 vize1 = float(input("vize 1: "))
@@ -101,7 +108,23 @@ result = (ortalama >= 50) or (final >= 70)
 print(f"öğrencinin ortalaması : {ortalama} ve geçme durumu : {result}")
 
 """
+# 5. cevap
 
+# vize1 = float(input("vize 1: "))
+# vize2 = float(input("vize 2: "))
+# final = float(input("final: "))
+
+
+# ortalama = ((vize1+vize2)/2)*0.6 + (final * 0.4)
+
+# if final >= 70:
+#     print(f"öğrenci {final} final notuyla geçti")
+# elif ortalama >= 50 and final >= 50:
+#     print(f"öğrenci {ortalama} ortalama ve {final} final notuyla geçti")
+# else:
+#     print(f"öğrenci {ortalama} ortalama ama {final} final notuyla kaldı")
+
+#######################################################################
 """
 6- Kişinin ad, kilo ve boy bilgilerini alıp kilo indekslerini hesaplayınız.
    Formül : (Kilo / boy uzunluğunun karesi)
@@ -127,3 +150,18 @@ print(f"{name} kilo indeksin: {index} ve kilo değerlendirmen zayıf: {kilolu}")
 print(f"{name} kilo indeksin: {index} ve kilo değerlendirmen zayıf: {obez}")
 
 """
+# name = input("adınız: ")
+# kg = float(input("kilonuz: "))
+# hg = float(input("boyunuz: "))
+
+# index = (kg) / (hg ** 2)
+
+
+# if (index >= 0) and (index <= 18.4):
+#     print(f"{name} kilo indeksin: {index} ve kilo değerlendirmen zayıf")
+# elif (index >= 18.4) and (index <= 24.9):
+#     print(f"{name} kilo indeksin: {index} ve kilo değerlendirmen normal")
+# elif (index >= 24.9) and (index <= 29.9):
+#     print(f"{name} kilo indeksin: {index} ve kilo değerlendirmen kilolu")
+# elif (index >= 29.9) and (index <= 34.9):
+#     print(f"{name} kilo indeksin: {index} ve kilo değerlendirmen obez")
