@@ -9,13 +9,13 @@
 import random
 
 tutulanSayi = random.randrange(1, 100)
-# print(tutulanSayi)
+print(tutulanSayi)
 
 x = 0
 tahmin = 0
 hak = int(input("Hak sayısını giriniz: "))
 puan = 100
-hesapla = puan / hak
+hesapla = puan // hak
 
 print(f"hak sayısı puanı: {puan}")
 
@@ -37,14 +37,5 @@ while x < hak and tutulanSayi != tahmin:
     
     elif x == hak:
         print(f"{hak} Hak sayınız bitti {puan} puanla kaybettiniz.")
-
-
-       
-
-
-
-
-    
-    
-
-
+else:
+    print("Oyun bitti")
