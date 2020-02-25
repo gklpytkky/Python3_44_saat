@@ -9,22 +9,38 @@
 import random
 
 tutulanSayi = random.randrange(1, 100)
-print(tutulanSayi)
+# print(tutulanSayi)
 
 x = 0
 tahmin = 0
+hak = int(input("Hak sayısını giriniz: "))
+puan = 100
+hesapla = puan / hak
 
-while x < 5 and tutulanSayi != tahmin:
+print(f"hak sayısı puanı: {puan}")
+
+while x < hak and tutulanSayi != tahmin:
+    
     x += 1
     tahmin = (int(input(f"{x}.Tahminizi girin: ")))
+    
     if tutulanSayi == tahmin:
-        print("Bildiniz.")
+        print(f"{x}. Hakkınızda bildiniz ve {puan} puan kazandınız.")
+
     elif tutulanSayi < tahmin:
-        print("Aşağı")
+        puan = (puan - hesapla)
+        print(f"Aşağı. -> {puan} puan kaldı.") 
+        
     elif tutulanSayi > tahmin:
-        print("Yukarı")
-    if x == 5:
-        print("hakkınız bitti")
+        puan = (puan - hesapla)
+        print(f"Yukarı. -> {puan} puan kaldı.")
+    
+    elif x == hak:
+        print(f"{hak} Hak sayınız bitti {puan} puanla kaybettiniz.")
+
+
+       
+
 
 
 
