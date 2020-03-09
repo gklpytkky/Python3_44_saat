@@ -3,6 +3,7 @@
 class Person:
     # class attributes
     address = "no information"
+    
     # constructor ( yapıcı metod)
     def __init__(self, name, year):
 
@@ -12,7 +13,7 @@ class Person:
         self.year = year
         print("init metodu çalıştı")
 
-        # methods
+    # methods
 
 
 # object (instance)
@@ -23,6 +24,7 @@ p2 = Person(name = "yağmur",year = 1995)
 #updating
 p1.name = "ahmet"
 p1.address = "kocaeli"
+
 
 # accessing object attributes
 print(f"p1: name: {p1.name} year: {p1.year} address: {p1.address}")
